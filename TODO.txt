@@ -1,0 +1,16 @@
+Snapshot
+    View
+        [x] Escuta eventos de teclado (left, right)
+        [x] Chama métodos do controller de avançar/voltar
+    Model
+        [x] Qualquer objeto (implementa qualquer lógica de interação, view, etc)
+        [x] Deve implementar os métodos getState/setState
+        [x] Deve notificar quando seu estado mudar
+    Controller
+        [x] Tem o estado inicial de todos os objetos
+        [ ] Tem uma lista de snaps
+            [ ] Guarda os getStates old/new de todos os objetos que mudararam naquele snap
+        [ ] Tem métodos para avançar/voltar
+        [x] Escuta eventos de mudança dos models
+            [x] Guarda em um set de objetos modificados
+        [ ] Pode salvar/carregar todos os estados em um arquivo
